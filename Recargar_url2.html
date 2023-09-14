@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recargar URL</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .button {
+            margin-bottom: 20px;
+            background-color: yellow;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <button class="button" onclick="window.location.href = 'https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.gob.mx%2F...%2Fconoce-la-cedula-de-solicitud-de%3Ffbclid%3DIwAR0SjCDP20ng-SsN7Gf2o8rGkaSAvTzHVFy13rXtzBOX75xVvhQbm1hsfPY&h=AT32_vyqb-vsfGIgnvaK4XoVExG73kNe0yWAEWPA663daw7aGtnun5s7tQbmF9G-rGr-l1Sg0I_Frt5lLTrQItu0R3zwkJB-t5FTQ_AC4h6tSFByMmOO7ExrhbsV4kq7YQ&__tn__=-UK-R&c[0]=AT0b2xr0aGQes4Rr_6fIyZeRftkaRaXGz83wcnfmR4Xd8f6uzJ7d6BmepqEKhqr46QwTS0AMOTmIOF-pBKub9LoMvM7sayz7fzfgNLf33ClOXNvU3_YbBlDj4tTTqc5B6aPIBhuJdzCPAEr318B4FxSseszdMTN3cu9AQRpb2AmWpsWzDkeSIGKLc3bPOOhyUEPD8_2YTby5'">Ir a la URL</button>
+    <iframe src="https://www.gob.mx/.../conoce-la-cedula-de-solicitud-de" width="1260" height="1000" frameborder="0"></iframe>
+
+    <script>
+        // Función para recargar la página cada 5 minutos (300,000 milisegundos)
+        function actualizarPagina() {
+            location.reload(true);
+        }
+
+        // Llamar a la función de actualización cada 5 minutos
+        setTimeout(actualizarPagina, 60000); // 60,000 ms = 1 minuto // 300,000 ms = 5 minutos
+    </script>
+</body>
+</html>
